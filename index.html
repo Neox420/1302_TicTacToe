@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <div id="game-mode-menu">
+      <label>
+        <input type="radio" name="game-mode" id="single-player" checked> Einzelspieler </label>
+      <label>
+        <input type="radio" name="game-mode" id="multiplayer"> Mehrspieler </label>
+    </div>
+
+    <div id="difficulty-menu">
+      <input type="radio" name="difficulty" id="easy" checked>
+      <label for="easy">Leicht</label>
+      <input type="radio" name="difficulty" id="hard">
+      <label for="hard">Schwer</label>
+    </div>
+
+    <h2>Fangen Sie immer mit X an & Sie haben den ersten Spielzug</h2>
+    <br>
+
+    <table id="game-board">
+      <tr>
+        <td id="cell-0"></td>
+        <td id="cell-1"></td>
+        <td id="cell-2"></td>
+      </tr>
+      <tr>
+        <td id="cell-3"></td>
+        <td id="cell-4"></td>
+        <td id="cell-5"></td>
+      </tr>
+      <tr>
+        <td id="cell-6"></td>
+        <td id="cell-7"></td>
+        <td id="cell-8"></td>
+      </tr>
+    </table>
+
+    <a href="index.html">
+      <button id="reset-button">Wieder zurücksetzen</button>
+    </a>
+    
+    <script src="game.js"></script>
+  </body>
+</html>
